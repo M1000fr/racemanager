@@ -1,0 +1,23 @@
+### Get simulators
+GET http://localhost:3000/simulators
+Content-Type: application/json
+
+### Create a new simulator
+POST http://localhost:3000/simulators/new-session
+Content-Type: application/json
+
+{
+  "simulatorsIds": [
+    1,
+    2
+  ],
+  "sessionId": "uDG0lTuKen7Ac8rf1bazE6GYS54TITjq"
+}
+
+### Delete a session
+POST http://localhost:3000/simulators/stop-session
+Content-Type: application/json
+
+{
+  "sessionId": "uDG0lTuKen7Ac8rf1bazE6GYS54TITjq"
+}
